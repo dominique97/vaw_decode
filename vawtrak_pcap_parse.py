@@ -339,7 +339,7 @@ class Stream():
 
   def printStream(self, outFile):
       start = datetime.datetime.fromtimestamp(int(self.start_time)).strftime('%Y-%m-%d %H:%M:%S')
-      if "veork\1.php" in self.url:
+      if "work\1.php" in self.url:
           # the url that the malware is communicating with
           outLine = start + ',' + self.source_ip + ' -> ' + self.dest_ip
           outLine += ',' + self.url + ',\"' + decode(self.body) + '\"\n'
